@@ -41,6 +41,7 @@ const ICONS = {
   plus: '<path d="M12 5v14M5 12h14"/>',
   trash: '<path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/>',
   download: '<path d="M12 4v11M7 11l5 5 5-5M5 20h14"/>',
+  arauc: '<path d="M12 9.5V20"/><path d="M4.5 11Q12 3.5 19.5 11"/><path d="M7.5 15Q12 10.5 16.5 15"/>',
   sol: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
   lua: '<path d="M20 14.5A8 8 0 019.5 4a8 8 0 1010.5 10.5z"/>',
   brief: '<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V4h6v3M3 13h18"/>'
@@ -578,7 +579,7 @@ function App() {
   return h(React.Fragment, null,
     h("a", { className: "pular", href: "#conteudo", onClick: e => { e.preventDefault(); const m = document.getElementById("conteudo"); if (m) { m.focus(); } } }, u.pular),
     h("header", { className: "topo" }, h("div", { className: "w topo-in" },
-      h("button", { className: "marca", onClick: () => ir("inicio") }, h("span", { className: "marca-i" }, h(Icon, { n: "tree" })), u.marca),
+      h("button", { className: "marca", onClick: () => ir("inicio") }, h("span", { className: "marca-i" }, h(Icon, { n: "arauc" })), u.marca),
       h("nav", { className: "abas", "aria-label": u.nav }, D.abas.map(b => h("button", { key: b[0], className: aba === b[0] ? "on" : "", "aria-current": aba === b[0] ? "page" : undefined, onClick: () => ir(b[0]) }, b[1]))),
       h("div", { className: "topo-d" }, h(Idioma, { lg, trocar, rotulo: u.idioma }),
         h("button", { type: "button", className: "tema-b", "aria-label": tema === "dark" ? u.temaC : u.temaE, title: tema === "dark" ? u.temaC : u.temaE, onClick: alternar }, h(Icon, { n: tema === "dark" ? "sol" : "lua" }))))),
