@@ -55,7 +55,7 @@ const SKYLINE = '<svg viewBox="0 0 1200 300" preserveAspectRatio="xMidYMax slice
 /* Dados já traduzidos: dados.js (dadosBase, EXTRA e NOVO) */
 function dados(lg) {
   const b = dadosBase(lg);
-  return { ui: Object.assign({}, b.ui, EXTRA[lg], NOVO[lg], pre("cv_", CVK, CV[lg]), pre("em_", EMK, EM[lg]), XEM[lg], XCV[lg], { cv_niveis: XNIV[lg] }), abas: b.abas, cartoes: b.cartoes, lugares: b.lugares, fatos: b.fatos, passos: b.passos, topicos: b.topicos, det: DET[lg] || DET.pt };
+  return { ui: Object.assign({}, b.ui, EXTRA[lg], NOVO[lg], pre("cv_", CVK, CV[lg]), pre("em_", EMK, EM[lg]), XEM[lg], XCV[lg], { cv_niveis: XNIV[lg] }), abas: b.abas, cartoes: b.cartoes, lugares: b.lugares, fatos: b.fatos, passos: b.passos, topicos: b.topicos, det: DET[lg] || DET.pt, doc: DOC[lg] || DOC.pt };
 }
 function lgInicial() {
   let v = null;
@@ -170,16 +170,23 @@ function Documentos(p) {
       h("div", { className: "resumo" },
         h("div", { className: "prog", role: "progressbar", "aria-valuemin": 0, "aria-valuemax": d.passos.length, "aria-valuenow": feitos }, h("div", { className: "prog-b", style: { width: (feitos / d.passos.length * 100) + "%" } })),
         h("p", null, u.prog.replace("{n}", feitos).replace("{m}", d.passos.length)),
-        feitos === d.passos.length ? h("p", { className: "parab", role: "status" }, u.parab) : null),
-      h("ol", { className: "etapas" }, d.passos.map((x, i) => h("li", { key: x[0], className: ck[i] ? "ok" : "" }, h("h3", null, x[0]), h("p", null, x[1]), h("p", { className: "det" }, h("strong", null, u.levarR + ": "), d.det.passos[i]),
+        feitos === d.passos.length ? h("p", { className: "parab", role: "status" }, u.parab) : null,
+        h("div", { className: "doc-acoes" },
+          h("button", { type: "button", className: "btn btn-s", onClick: () => { document.querySelectorAll("details").forEach(x => { x.open = true; }); window.print(); } }, u.imprimir),
+          h("button", { type: "button", className: "btn-x", onClick: () => { setCk({}); try { localStorage.removeItem("checklist"); } catch (e) {} } }, h(Icon, { n: "trash" }), u.limparCk))),
+      h("ol", { className: "etapas" }, d.passos.map((x, i) => h("li", { key: x[0], className: ck[i] ? "ok" : "" }, h("h3", null, x[0]), h("p", null, x[1]),
+        h("p", { className: "cu" }, h("strong", null, u.cuR + ": "), d.doc.cu[i]),
+        h("details", null, h("summary", null, u.comoR),
+          h("ol", { className: "como" }, d.doc.como[i].map((s, k) => h("li", { key: k }, s))),
+          h("p", { className: "det" }, h("strong", null, u.levarR + ": "), d.det.passos[i])),
+        DOCLINK[i] ? h("a", { className: "mapa", href: DOCLINK[i], target: "_blank", rel: "noopener noreferrer" }, u.siteOf, h(Icon, { n: "ext" })) : null,
         h("label", { className: "feito" }, h("input", { type: "checkbox", checked: !!ck[i], onChange: () => marcar(i) }), u.feito)))),
-      h("div", { className: "doc-acoes" },
-        h("button", { type: "button", className: "btn btn-s", onClick: () => window.print() }, u.imprimir),
-        h("button", { type: "button", className: "btn-x", onClick: () => { setCk({}); try { localStorage.removeItem("checklist"); } catch (e) {} } }, h(Icon, { n: "trash" }), u.limparCk)),
+      h("div", { className: "aviso caso" }, h("h3", null, u.casoT), h("ul", null, u.caso.map((t, k) => h("li", { key: k }, t)))),
       h("div", { className: "lembrete" }, h("h3", null, u.lembT), h("p", null, u.lembD),
         h("form", { onSubmit: e => { e.preventDefault(); if (data) { baixarIcs(data, u); } } },
           h("label", null, u.dataL, h("input", { type: "date", required: true, value: data, onChange: e => setData(e.target.value) })),
           h("button", { className: "btn btn-p", type: "submit" }, u.lembB))),
+      h("details", { className: "gloss" }, h("summary", null, u.glosT), h("dl", null, u.gloss.map(g => h(React.Fragment, { key: g[0] }, h("dt", null, g[0]), h("dd", null, g[1]))))),
       h("p", { className: "aviso" }, u.aviso)));
 }
 
@@ -438,8 +445,7 @@ function Curriculo(p) {
       h("label", { className: "cp" }, u.cv_idPdf, h("select", { value: cv.pdfLg, onChange: e => set("pdfLg", e.target.value) }, LANGS.map(l => h("option", { key: l[0], value: l[0] }, l[1]))), h("small", null, u.cv_idPdfD)),
       naoLatino ? h("p", { className: "cv-av" }, u.cv_latim) : null,
       h("button", { type: "button", className: "btn btn-a", onClick: baixar }, h(Icon, { n: "download" }), u.cv_baixar),
-      h("p", { className: "cv-priv" }, u.cv_priv),
-      h("button", { type: "button", className: "btn-x", onClick: limpar }, h(Icon, { n: "trash" }), u.cv_limpar));
+      h("p", { className: "cv-priv" }, u.cv_priv));
   }
 
   return h("div", null, h(Cab, { t: u.cv_t, d: u.cv_d }),
@@ -447,7 +453,9 @@ function Curriculo(p) {
       h("ol", { className: "cv-passos", "aria-label": u.cv_t }, rotulos.map((l, i) => h("li", { key: i, className: i === passo ? "on" : i < passo ? "feito" : "" },
         h("button", { type: "button", "aria-current": i === passo ? "step" : undefined, onClick: () => ir(i) }, h("span", null, i + 1), l)))),
       h("div", { className: "cv-caixa" },
-        h("p", { className: "cv-q" }, u.cv_passoDe.replace("{n}", passo + 1).replace("{m}", rotulos.length)),
+        h("div", { className: "cv-topo" },
+          h("p", { className: "cv-q" }, u.cv_passoDe.replace("{n}", passo + 1).replace("{m}", rotulos.length)),
+          h("button", { type: "button", className: "btn-x", onClick: limpar }, h(Icon, { n: "trash" }), u.cv_limpar)),
         aviso ? h("p", { className: "cv-err", role: "alert" }, aviso) : null,
         corpo,
         passo < ULT ? h("div", { className: "cv-nav" },

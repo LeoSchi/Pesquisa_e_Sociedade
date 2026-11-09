@@ -348,6 +348,159 @@ var DET={
  }
 };
 
+/* Aba Documentação: passo a passo (como) e custo/prazo (cu) de cada etapa, na mesma ordem dos passos. */
+var DOC={
+ "pt": {
+  "como": [
+   [
+    "Acesse o serviço de registro de estrangeiro no gov.br e preencha o formulário.",
+    "Salve o formulário para gerar o número do requerimento.",
+    "Emita a GRU (taxa) e agende na unidade da PF da sua cidade.",
+    "Compareça no dia marcado, para foto e digitais, e guarde o protocolo."
+   ],
+   [
+    "Preencha o formulário de inscrição no CPF no site da Receita Federal.",
+    "Guarde o número do protocolo gerado.",
+    "Leve os originais a uma unidade da Receita ou a um parceiro (Banco do Brasil, Caixa ou Correios)."
+   ],
+   [
+    "Crie ou acesse sua conta gov.br (o CPF é necessário).",
+    "Baixe o app Carteira de Trabalho Digital.",
+    "Entre com a conta gov.br e confira seus dados."
+   ],
+   [
+    "Procure a unidade básica de saúde (UBS) do seu bairro.",
+    "Leve o documento e o comprovante de residência.",
+    "Peça o cadastro e o Cartão Nacional de Saúde."
+   ],
+   [
+    "Providencie a apostila de Haia no país de origem (ou a legalização consular, se o país não participar).",
+    "Faça a tradução juramentada no Brasil, com tradutor público.",
+    "Guarde os originais e uma cópia digital."
+   ]
+  ],
+  "cu": [
+   "A taxa da CRNM fica em torno de R$ 205; confirme o valor atual. O protocolo serve como documento provisório até a carteira ficar pronta.",
+   "O serviço da Receita é gratuito. Parceiros podem cobrar taxa; confirme. O número costuma sair na hora.",
+   "Gratuita e feita pelo celular. Só trabalhe depois de confirmar que sua autorização permite.",
+   "Gratuito. Em emergências, você é atendido mesmo sem o cartão.",
+   "Têm custo e variam conforme o país e o tradutor. Planeje antes de viajar."
+  ]
+ },
+ "es": {
+  "como": [
+   [
+    "Entra al servicio de registro de extranjeros en gov.br y completa el formulario.",
+    "Guarda el formulario para generar el número de solicitud.",
+    "Emite la GRU (tasa) y agenda en la unidad de la PF de tu ciudad.",
+    "Ve el día acordado para foto y huellas, y guarda el comprobante."
+   ],
+   [
+    "Completa el formulario de inscripción al CPF en el sitio de la Receita Federal.",
+    "Guarda el número de protocolo generado.",
+    "Lleva los originales a una unidad de la Receita o a un socio (Banco do Brasil, Caixa o Correios)."
+   ],
+   [
+    "Crea o ingresa a tu cuenta gov.br (se necesita el CPF).",
+    "Descarga la app Carteira de Trabalho Digital.",
+    "Entra con tu cuenta gov.br y revisa tus datos."
+   ],
+   [
+    "Busca la unidad básica de salud (UBS) de tu barrio.",
+    "Lleva el documento y el comprobante de domicilio.",
+    "Pide el registro y la Tarjeta Nacional de Salud."
+   ],
+   [
+    "Gestiona la apostilla de La Haya en tu país (o la legalización consular, si no participa).",
+    "Haz la traducción jurada en Brasil, con traductor público.",
+    "Guarda los originales y una copia digital."
+   ]
+  ],
+  "cu": [
+   "La tasa de la CRNM ronda R$ 205; confirma el valor actual. El comprobante sirve como documento provisional hasta que esté lista la tarjeta.",
+   "El servicio de la Receita es gratuito. Los socios pueden cobrar tasa; confirma. El número suele salir al instante.",
+   "Gratuita y desde el celular. Trabaja solo después de confirmar que tu autorización lo permite.",
+   "Gratuito. En emergencias te atienden aunque no tengas la tarjeta.",
+   "Tienen costo y varían según el país y el traductor. Planifica antes de viajar."
+  ]
+ },
+ "fr": {
+  "como": [
+   [
+    "Ouvrez le service d’enregistrement des étrangers sur gov.br et remplissez le formulaire.",
+    "Enregistrez-le pour obtenir le numéro de demande.",
+    "Émettez la GRU (taxe) et prenez rendez-vous à la PF de votre ville.",
+    "Présentez-vous au rendez-vous pour la photo et les empreintes, et gardez le récépissé."
+   ],
+   [
+    "Remplissez le formulaire d’inscription au CPF sur le site de la Receita Federal.",
+    "Gardez le numéro de protocole généré.",
+    "Apportez les originaux à un bureau de la Receita ou à un partenaire (Banco do Brasil, Caixa ou Correios)."
+   ],
+   [
+    "Créez ou ouvrez votre compte gov.br (le CPF est nécessaire).",
+    "Téléchargez l’appli Carteira de Trabalho Digital.",
+    "Connectez-vous avec gov.br et vérifiez vos données."
+   ],
+   [
+    "Cherchez l’unité de santé (UBS) de votre quartier.",
+    "Apportez une pièce d’identité et un justificatif de domicile.",
+    "Demandez l’inscription et la carte nationale de santé."
+   ],
+   [
+    "Obtenez l’apostille de La Haye dans votre pays (ou la légalisation consulaire si le pays n’y participe pas).",
+    "Faites la traduction assermentée au Brésil, avec un traducteur public.",
+    "Gardez les originaux et une copie numérique."
+   ]
+  ],
+  "cu": [
+   "La taxe de la CRNM est d’environ R$ 205 ; vérifiez le montant actuel. Le récépissé sert de document provisoire jusqu’à la carte.",
+   "Le service de la Receita est gratuit. Les partenaires peuvent facturer ; vérifiez. Le numéro sort souvent sur place.",
+   "Gratuite et faite depuis le téléphone. Ne travaillez qu’après avoir vérifié que votre autorisation le permet.",
+   "Gratuit. En urgence, vous êtes soigné même sans la carte.",
+   "Ils ont un coût qui varie selon le pays et le traducteur. Planifiez avant de partir."
+  ]
+ },
+ "en": {
+  "como": [
+   [
+    "Open the foreigner registration service on gov.br and fill in the form.",
+    "Save the form to get your request number.",
+    "Issue the GRU (fee) and book an appointment at the PF office in your city.",
+    "Go on the day for your photo and fingerprints, and keep the receipt."
+   ],
+   [
+    "Fill in the CPF registration form on the Receita Federal website.",
+    "Keep the protocol number it generates.",
+    "Take your originals to a Receita office or a partner (Banco do Brasil, Caixa or Correios)."
+   ],
+   [
+    "Create or sign in to your gov.br account (the CPF is required).",
+    "Download the Carteira de Trabalho Digital app.",
+    "Sign in with gov.br and check your details."
+   ],
+   [
+    "Find the basic health unit (UBS) in your neighborhood.",
+    "Bring your ID and proof of address.",
+    "Ask to be registered and get the National Health Card."
+   ],
+   [
+    "Get the Hague apostille in your home country (or consular legalization if it is not a member).",
+    "Have a sworn translation done in Brazil, by a public translator.",
+    "Keep the originals and a digital copy."
+   ]
+  ],
+  "cu": [
+   "The CRNM fee is around R$ 205; check the current amount. The receipt works as a temporary document until the card is ready.",
+   "The Receita service is free. Partners may charge a fee; check. The number is often issued on the spot.",
+   "Free and done on your phone. Only work after confirming your permit allows it.",
+   "Free. In emergencies you are treated even without the card.",
+   "They cost money and vary by country and translator. Plan before you travel."
+  ]
+ }
+};
+var DOCLINK=["https://www.gov.br/pt-br/servicos/registrar-se-como-estrangeiro-no-brasil","","","",""];
+
 function dadosBase(lg){
   var x=I18N[lg];
   if(!x){return {ui:UI_PT,abas:ABAS,cartoes:CARTOES,lugares:LUGARES,fatos:FATOS,passos:PASSOS,topicos:TOPICOS};}
@@ -367,10 +520,10 @@ en:{feito:"I’ve done this step",prog:"{n} of {m} steps completed. Your progres
 
 /* Textos novos do visual e do chatbot (sobrescrevem os de mesmo nome acima). */
 var NOVO={
-pt:{dicaR:"Dica",levarR:"O que levar",temaE:"Ativar modo escuro",temaC:"Ativar modo claro",pular:"Pular para o conteúdo",mapa:"Ver no mapa",imprimir:"Imprimir lista",limparCk:"Limpar marcações",parab:"Tudo concluído. Bom trabalho!",tels:["Polícia","SAMU","Bombeiros","Prefeitura","Mulher","Direitos humanos"],h1:"Bem-vindo a Curitiba. Vamos começar juntos.",lead:"Tudo o que você precisa para começar: documentos, moradia, escola dos filhos e a vida na cidade. Em linguagem simples.",btn:"Ver o passo a passo dos documentos",btn2:"Falar com o assistente",ajuda:"Como podemos ajudar?",ajudaD:"Escolha um assunto. O assistente responde em poucos segundos.",primeiros:"Seus primeiros passos",chatSub:"Respostas rápidas para quem acabou de chegar",emerg:"Emergência: 190 Polícia, 192 Ambulância, 193 Bombeiros",outras:"Mais perguntas sobre este assunto",menu:"Outro assunto",parecido:"Não achei uma resposta exata. Alguma destas perguntas ajuda?",irDoc:"Abrir o passo a passo dos documentos",irCid:"Ver a seção sobre a cidade",novo:"Nova conversa",dig:"Digitando",fab:"Precisa de ajuda?",intro:"Olá! Sou o assistente do guia. Escolha um assunto ou escreva sua pergunta.",sobre:"Sobre {t}. Qual é a sua pergunta?"},
-es:{dicaR:"Consejo",levarR:"Qué llevar",temaE:"Activar modo oscuro",temaC:"Activar modo claro",pular:"Saltar al contenido",mapa:"Ver en el mapa",imprimir:"Imprimir lista",limparCk:"Borrar marcas",parab:"¡Todo listo! Buen trabajo.",tels:["Policía","SAMU","Bomberos","Alcaldía","Mujer","Derechos humanos"],h1:"Bienvenido a Curitiba. Empecemos juntos.",lead:"Todo lo que necesitas para empezar: documentos, vivienda, escuela de tus hijos y la vida en la ciudad. En lenguaje sencillo.",btn:"Ver el paso a paso de los documentos",btn2:"Hablar con el asistente",ajuda:"¿Cómo podemos ayudarte?",ajudaD:"Elige un tema. El asistente responde en pocos segundos.",primeiros:"Tus primeros pasos",chatSub:"Respuestas rápidas para quien acaba de llegar",emerg:"Emergencia: 190 Policía, 192 Ambulancia, 193 Bomberos",outras:"Más preguntas sobre este tema",menu:"Otro tema",parecido:"No encontré una respuesta exacta. ¿Te sirve alguna de estas preguntas?",irDoc:"Abrir el paso a paso de los documentos",irCid:"Ver la sección sobre la ciudad",novo:"Nueva conversación",dig:"Escribiendo",fab:"¿Necesitas ayuda?",intro:"¡Hola! Soy el asistente de la guía. Elige un tema o escribe tu pregunta.",sobre:"Sobre {t}. ¿Cuál es tu pregunta?"},
-fr:{dicaR:"Conseil",levarR:"À apporter",temaE:"Activer le mode sombre",temaC:"Activer le mode clair",pular:"Aller au contenu",mapa:"Voir sur la carte",imprimir:"Imprimer la liste",limparCk:"Effacer les coches",parab:"Tout est terminé. Bravo !",tels:["Police","SAMU","Pompiers","Mairie","Femmes","Droits humains"],h1:"Bienvenue à Curitiba. Commençons ensemble.",lead:"Tout ce qu’il faut pour bien démarrer : papiers, logement, école des enfants et vie en ville. En langage simple.",btn:"Voir les démarches pour les papiers",btn2:"Parler à l’assistant",ajuda:"Comment pouvons-nous vous aider ?",ajudaD:"Choisissez un sujet. L’assistant répond en quelques secondes.",primeiros:"Vos premiers pas",chatSub:"Réponses rapides pour les nouveaux arrivants",emerg:"Urgence : 190 Police, 192 Ambulance, 193 Pompiers",outras:"Autres questions sur ce sujet",menu:"Autre sujet",parecido:"Je n’ai pas de réponse exacte. L’une de ces questions peut-elle aider ?",irDoc:"Ouvrir les démarches pour les papiers",irCid:"Voir la section sur la ville",novo:"Nouvelle conversation",dig:"En train d’écrire",fab:"Besoin d’aide ?",intro:"Bonjour ! Je suis l’assistant du guide. Choisissez un sujet ou écrivez votre question.",sobre:"À propos de {t}. Quelle est votre question ?"},
-en:{dicaR:"Tip",levarR:"What to bring",temaE:"Switch to dark mode",temaC:"Switch to light mode",pular:"Skip to content",mapa:"View on map",imprimir:"Print list",limparCk:"Clear checkmarks",parab:"All done. Great work!",tels:["Police","SAMU","Fire","City Hall","Women","Human rights"],h1:"Welcome to Curitiba. Let’s get started.",lead:"Everything you need to settle in: documents, housing, your children’s school and life in the city. In plain language.",btn:"See the step-by-step for documents",btn2:"Talk to the assistant",ajuda:"How can we help?",ajudaD:"Pick a topic. The assistant answers in a few seconds.",primeiros:"Your first steps",chatSub:"Quick answers for people who just arrived",emerg:"Emergency: 190 Police, 192 Ambulance, 193 Fire",outras:"More questions on this topic",menu:"Another topic",parecido:"I couldn’t find an exact answer. Does one of these questions help?",irDoc:"Open the documents step-by-step",irCid:"See the section about the city",novo:"New chat",dig:"Typing",fab:"Need help?",intro:"Hi! I’m the guide’s assistant. Pick a topic or type your question.",sobre:"About {t}. What is your question?"}
+pt:{dicaR:"Dica",levarR:"O que levar",temaE:"Ativar modo escuro",temaC:"Ativar modo claro",pular:"Pular para o conteúdo",mapa:"Ver no mapa",imprimir:"Imprimir lista",limparCk:"Limpar marcações",parab:"Tudo concluído. Bom trabalho!",siteOf:"Abrir site oficial",cuR:"Custo e prazo",comoR:"Como fazer",glosT:"Glossário rápido",casoT:"Avisos importantes:",gloss:[["CRNM", "Carteira de Registro Nacional Migratório: seu documento de identidade no Brasil."], ["RNM", "Número do seu registro migratório, que aparece na CRNM."], ["CPF", "Número de contribuinte, usado para conta bancária, trabalho, aluguel e celular."], ["gov.br", "Conta única para serviços do governo, como a Carteira de Trabalho Digital."], ["Apostila de Haia", "Selo que confirma que um documento estrangeiro é autêntico."], ["Tradução juramentada", "Tradução oficial feita por tradutor público, aceita por órgãos brasileiros."]],caso:["Visto temporário: o registro costuma ser pedido em até 90 dias após a entrada.", "Autorização de residência concedida já no Brasil: o prazo costuma ser de cerca de 30 dias após a publicação.", "Passar do prazo pode gerar multa. Se perder o prazo, agende o quanto antes e guarde o comprovante.", "Refugiados, estudantes, trabalhadores e quem vem por reunião familiar têm regras próprias. Confirme o seu caso na PF.","O atendimento é feito na unidade da PF da cidade onde você mora. Em Curitiba, escolha a unidade de Curitiba ao agendar.","Algumas unidades pedem roupa adequada; evite bermuda e camiseta regata."],tels:["Polícia","SAMU","Bombeiros","Prefeitura","Mulher","Direitos humanos"],h1:"Bem-vindo a Curitiba. Vamos começar juntos.",lead:"Tudo o que você precisa para começar: documentos, moradia, escola dos filhos e a vida na cidade. Em linguagem simples.",btn:"Ver o passo a passo dos documentos",btn2:"Falar com o assistente",ajuda:"Como podemos ajudar?",ajudaD:"Escolha um assunto. O assistente responde em poucos segundos.",primeiros:"Seus primeiros passos",chatSub:"Respostas rápidas para quem acabou de chegar",emerg:"Emergência: 190 Polícia, 192 Ambulância, 193 Bombeiros",outras:"Mais perguntas sobre este assunto",menu:"Outro assunto",parecido:"Não achei uma resposta exata. Alguma destas perguntas ajuda?",irDoc:"Abrir o passo a passo dos documentos",irCid:"Ver a seção sobre a cidade",novo:"Nova conversa",dig:"Digitando",fab:"Precisa de ajuda?",intro:"Olá! Sou o assistente do guia. Escolha um assunto ou escreva sua pergunta.",sobre:"Sobre {t}. Qual é a sua pergunta?"},
+es:{dicaR:"Consejo",levarR:"Qué llevar",temaE:"Activar modo oscuro",temaC:"Activar modo claro",pular:"Saltar al contenido",mapa:"Ver en el mapa",imprimir:"Imprimir lista",limparCk:"Borrar marcas",parab:"¡Todo listo! Buen trabajo.",siteOf:"Abrir sitio oficial",cuR:"Costo y plazo",comoR:"Cómo hacerlo",glosT:"Glosario rápido",casoT:"Nota importante:",gloss:[["CRNM", "Carteira de Registro Nacional Migratório: tu documento de identidad en Brasil."], ["RNM", "Número de tu registro migratorio, que figura en la CRNM."], ["CPF", "Número de contribuyente, usado para cuenta bancaria, trabajo, alquiler y celular."], ["gov.br", "Cuenta única para servicios del gobierno, como la Carteira de Trabalho Digital."], ["Apostilla de La Haya", "Sello que confirma que un documento extranjero es auténtico."], ["Traducción jurada", "Traducción oficial hecha por traductor público, aceptada por organismos brasileños."]],caso:["Visa temporal: el registro suele pedirse dentro de 90 días desde la entrada.", "Autorización de residencia concedida ya en Brasil: el plazo suele ser de unos 30 días tras su publicación.", "Pasarse del plazo puede generar multa. Si lo pierdes, agenda cuanto antes y guarda el comprobante.", "Refugiados, estudiantes, trabajadores y quienes llegan por reunificación familiar tienen reglas propias. Confirma tu caso en la PF.","La atención se hace en la unidad de la PF de la ciudad donde vives. En Curitiba, elige la unidad de Curitiba al agendar.","Algunas unidades piden ropa adecuada; evita bermudas y camisetas sin mangas."],tels:["Policía","SAMU","Bomberos","Alcaldía","Mujer","Derechos humanos"],h1:"Bienvenido a Curitiba. Empecemos juntos.",lead:"Todo lo que necesitas para empezar: documentos, vivienda, escuela de tus hijos y la vida en la ciudad. En lenguaje sencillo.",btn:"Ver el paso a paso de los documentos",btn2:"Hablar con el asistente",ajuda:"¿Cómo podemos ayudarte?",ajudaD:"Elige un tema. El asistente responde en pocos segundos.",primeiros:"Tus primeros pasos",chatSub:"Respuestas rápidas para quien acaba de llegar",emerg:"Emergencia: 190 Policía, 192 Ambulancia, 193 Bomberos",outras:"Más preguntas sobre este tema",menu:"Otro tema",parecido:"No encontré una respuesta exacta. ¿Te sirve alguna de estas preguntas?",irDoc:"Abrir el paso a paso de los documentos",irCid:"Ver la sección sobre la ciudad",novo:"Nueva conversación",dig:"Escribiendo",fab:"¿Necesitas ayuda?",intro:"¡Hola! Soy el asistente de la guía. Elige un tema o escribe tu pregunta.",sobre:"Sobre {t}. ¿Cuál es tu pregunta?"},
+fr:{dicaR:"Conseil",levarR:"À apporter",temaE:"Activer le mode sombre",temaC:"Activer le mode clair",pular:"Aller au contenu",mapa:"Voir sur la carte",imprimir:"Imprimer la liste",limparCk:"Effacer les coches",parab:"Tout est terminé. Bravo !",siteOf:"Ouvrir le site officiel",cuR:"Coût et délai",comoR:"Comment faire",glosT:"Mini-glossaire",casoT:"Avis importants:",gloss:[["CRNM", "Carteira de Registro Nacional Migratório : votre pièce d’identité au Brésil."], ["RNM", "Numéro de votre enregistrement migratoire, inscrit sur la CRNM."], ["CPF", "Numéro de contribuable, utilisé pour le compte bancaire, le travail, la location et le mobile."], ["gov.br", "Compte unique pour les services publics, comme la Carteira de Trabalho Digital."], ["Apostille de La Haye", "Cachet qui confirme l’authenticité d’un document étranger."], ["Traduction assermentée", "Traduction officielle faite par un traducteur public, acceptée par les administrations brésiliennes."]],caso:["Visa temporaire : l’enregistrement est généralement demandé dans les 90 jours suivant l’entrée.", "Autorisation de séjour accordée déjà au Brésil : le délai est souvent d’environ 30 jours après la publication.", "Dépasser le délai peut entraîner une amende. Si c’est le cas, prenez rendez-vous vite et gardez le justificatif.", "Réfugiés, étudiants, travailleurs et regroupement familial ont des règles propres. Vérifiez votre cas auprès de la PF.","Le rendez-vous se fait à la PF de la ville où vous habitez. À Curitiba, choisissez l’unité de Curitiba lors de la réservation.","Certaines unités exigent une tenue correcte ; évitez short et débardeur."],tels:["Police","SAMU","Pompiers","Mairie","Femmes","Droits humains"],h1:"Bienvenue à Curitiba. Commençons ensemble.",lead:"Tout ce qu’il faut pour bien démarrer : papiers, logement, école des enfants et vie en ville. En langage simple.",btn:"Voir les démarches pour les papiers",btn2:"Parler à l’assistant",ajuda:"Comment pouvons-nous vous aider ?",ajudaD:"Choisissez un sujet. L’assistant répond en quelques secondes.",primeiros:"Vos premiers pas",chatSub:"Réponses rapides pour les nouveaux arrivants",emerg:"Urgence : 190 Police, 192 Ambulance, 193 Pompiers",outras:"Autres questions sur ce sujet",menu:"Autre sujet",parecido:"Je n’ai pas de réponse exacte. L’une de ces questions peut-elle aider ?",irDoc:"Ouvrir les démarches pour les papiers",irCid:"Voir la section sur la ville",novo:"Nouvelle conversation",dig:"En train d’écrire",fab:"Besoin d’aide ?",intro:"Bonjour ! Je suis l’assistant du guide. Choisissez un sujet ou écrivez votre question.",sobre:"À propos de {t}. Quelle est votre question ?"},
+en:{dicaR:"Tip",levarR:"What to bring",temaE:"Switch to dark mode",temaC:"Switch to light mode",pular:"Skip to content",mapa:"View on map",imprimir:"Print list",limparCk:"Clear checkmarks",parab:"All done. Great work!",siteOf:"Open official site",cuR:"Cost and timing",comoR:"How to do it",glosT:"Quick glossary",casoT:"Important warnings:",gloss:[["CRNM", "Carteira de Registro Nacional Migratório: your ID card in Brazil."], ["RNM", "Your migration registration number, shown on the CRNM."], ["CPF", "Taxpayer number, used for a bank account, work, renting and a phone line."], ["gov.br", "A single account for government services, such as the Carteira de Trabalho Digital."], ["Hague apostille", "A stamp confirming that a foreign document is authentic."], ["Sworn translation", "An official translation by a public translator, accepted by Brazilian agencies."]],caso:["Temporary visa: registration is usually due within 90 days of entry.", "Residence permit granted while already in Brazil: the deadline is usually about 30 days after publication.", "Missing the deadline can lead to a fine. If you miss it, book as soon as possible and keep the receipt.", "Refugees, students, workers and family reunification have their own rules. Confirm your case with the PF.","Service is at the PF office of the city where you live. In Curitiba, choose the Curitiba office when booking.","Some offices require appropriate clothing; avoid shorts and tank tops."],tels:["Police","SAMU","Fire","City Hall","Women","Human rights"],h1:"Welcome to Curitiba. Let’s get started.",lead:"Everything you need to settle in: documents, housing, your children’s school and life in the city. In plain language.",btn:"See the step-by-step for documents",btn2:"Talk to the assistant",ajuda:"How can we help?",ajudaD:"Pick a topic. The assistant answers in a few seconds.",primeiros:"Your first steps",chatSub:"Quick answers for people who just arrived",emerg:"Emergency: 190 Police, 192 Ambulance, 193 Fire",outras:"More questions on this topic",menu:"Another topic",parecido:"I couldn’t find an exact answer. Does one of these questions help?",irDoc:"Open the documents step-by-step",irCid:"See the section about the city",novo:"New chat",dig:"Typing",fab:"Need help?",intro:"Hi! I’m the guide’s assistant. Pick a topic or type your question.",sobre:"About {t}. What is your question?"}
 };
 
 /* ===== Currículo e Empregos (textos nos 4 idiomas) ===== */
@@ -461,6 +614,16 @@ es:["Empleos con contrato formal en Paraná, atención gratuita. La unidad centr
 fr:["Offres avec contrat déclaré dans le Paraná, service gratuit. L’unité centrale de Curitiba est au 503, Rua Pedro Ivo. Vérifiez l’adresse et les horaires avant d’y aller.","Guides pour réfugiés et migrants : conseils pour le CV, l’entretien et projets d’emploi.","Guichet unique du gouvernement du Paraná pour migrants, réfugiés et apatrides, avec des actions pour l’emploi. Cherchez l’adresse sur le site du gouvernement du Paraná.","Organise des salons de l’emploi pour migrants et réfugiés avec des entreprises partenaires. Renseignez-vous sur les prochaines dates.","Site d’offres avec option pour se déclarer réfugié, utilisée par des entreprises qui veulent recruter des réfugiés.","Réseau professionnel. Utile pour les postes plus qualifiés et pour contacter des entreprises.","Regroupe des annonces de plusieurs sources. Cherchez par ville et domaine."],
 en:["Jobs with a formal contract in Paraná, free service. The central Curitiba unit is at Rua Pedro Ivo, 503. Check the address and hours before going.","Guides for refugees and migrants, with résumé and interview tips and job projects.","One-stop desk of the Paraná government for migrants, refugees and stateless people, with job events. Look up the address on the Paraná government website.","Organizes job fairs for migrants and refugees with partner companies. Ask about upcoming dates.","Job site with an option to identify as a refugee, used by companies that want to hire refugees.","Professional network. Good for jobs that need more qualifications and for contacting companies.","Gathers listings from many sources. Search by your city and field."]
 };
+
+/* ===== Descrições das consultorias de RH (mesma ordem dos itens "rh" em EMP, depois dos 8 primeiros) ===== */
+var EMPD_RH={
+pt:["Gestão de pessoas, trabalho temporário e recrutamento. O site tem vagas presenciais em Curitiba e região, principalmente para indústria e áreas técnicas.","Consultoria de recrutamento de Curitiba, com foco em executivos e profissionais especializados. Permite cadastrar o currículo no portal de vagas.","Recrutamento e alocação de profissionais de tecnologia (TI). Tem página de carreiras para cadastrar o currículo.","Consultoria de recrutamento focada em vendas e marketing, com portal de candidatos e vagas da área comercial.","Consultoria de Curitiba em recrutamento e desenvolvimento de carreira. Tem uma página de oportunidades.","Recrutamento especializado para cargos técnicos e de gerência, com escritório em Curitiba. Permite buscar vagas e enviar o currículo.","Consultoria de Curitiba em busca de executivos e desenvolvimento de lideranças. Tem uma página de oportunidades.","Consultoria de liderança e recrutamento de executivos. Tem um portal para cadastrar seu perfil."],
+es:["Gestión de personas, trabajo temporal y reclutamiento. El sitio tiene empleos presenciales en Curitiba y alrededores, sobre todo en industria y áreas técnicas.","Consultora de reclutamiento de Curitiba, enfocada en ejecutivos y profesionales especializados. Permite registrar el currículum en su portal de empleos.","Reclutamiento y asignación de profesionales de tecnología (TI). Tiene una página de carreras para registrar el currículum.","Consultora de reclutamiento enfocada en ventas y marketing, con portal de candidatos y empleos del área comercial.","Consultora de Curitiba en reclutamiento y desarrollo de carrera. Tiene una página de oportunidades.","Reclutamiento especializado para cargos técnicos y de gerencia, con oficina en Curitiba. Permite buscar empleos y enviar el currículum.","Consultora de Curitiba en búsqueda de ejecutivos y desarrollo de liderazgos. Tiene una página de oportunidades.","Consultora de liderazgo y reclutamiento de ejecutivos. Tiene un portal para registrar tu perfil."],
+fr:["Gestion du personnel, travail temporaire et recrutement. Le site propose des postes sur place à Curitiba et dans la région, surtout dans l’industrie et les métiers techniques.","Cabinet de recrutement de Curitiba, centré sur les cadres et les profils spécialisés. Permet de déposer son CV sur son portail d’offres.","Recrutement et placement de professionnels de l’informatique (TI). Une page carrières permet de déposer son CV.","Cabinet de recrutement spécialisé en ventes et marketing, avec un portail candidats et des offres commerciales.","Cabinet de Curitiba en recrutement et développement de carrière. Une page présente les opportunités.","Recrutement spécialisé pour les postes techniques et de direction, avec un bureau à Curitiba. Permet de chercher des offres et d’envoyer son CV.","Cabinet de Curitiba en recherche de cadres dirigeants et développement du leadership. Une page présente les opportunités.","Cabinet de conseil en leadership et recrutement de cadres. Un portail permet de déposer son profil."],
+en:["People management, temporary work and recruitment. The site lists on-site jobs in Curitiba and the region, mostly in industry and technical roles.","Curitiba recruitment firm focused on executives and specialized professionals. You can submit your résumé through its jobs portal.","Recruitment and placement of IT professionals. It has a careers page where you can submit your résumé.","Recruitment firm focused on sales and marketing, with a candidate portal and sales-related jobs.","Curitiba firm for recruitment and career development. It has an opportunities page.","Specialized recruitment for technical and management roles, with an office in Curitiba. You can search jobs and send your résumé.","Curitiba firm for executive search and leadership development. It has an opportunities page.","Leadership consulting and executive search firm. It has a portal where you can register your profile."]
+};
+/* junta as descrições novas às antigas (índice = posição em EMP) */
+(function(){for(var l in EMPD_RH){EMPD[l]=EMPD[l].concat(EMPD_RH[l]);}})();
 var EM={
 pt:["Oportunidades de emprego","Sites e serviços confiáveis para procurar trabalho com segurança. Comece pelos canais oficiais e gratuitos.","Canais oficiais e gratuitos","Apoio para migrantes e refugiados","Sites de vagas","Abrir site","Você vai sair deste site. Confira sempre as informações antes de enviar seus documentos.","Antes de aceitar uma vaga",
 "Pedem dinheiro para contratar você ou para “liberar” a vaga.","Prometem salário muito alto sem entrevista ou sem explicar o trabalho.","Não explicam o contrato. Prefira vagas com carteira assinada.","Querem ficar com seu passaporte ou documentos originais. Entregue apenas cópias.","Cobram dívidas de viagem, moradia ou alimentação que você não combinou.",
@@ -476,15 +639,6 @@ en:["Job opportunities","Trusted sites and services to look for work safely. Sta
 "Have you suffered or seen abuse?","Holding your documents, not paying for your work or making threats are serious violations. You can report for free and anonymously.","Ipê System: online report (also in Spanish, French and English)","Disque 100: free call, 24 hours","Don’t have a résumé yet? Build yours","See the documents you need to work","No direct site. Search by name."]
 };
 
-/* ===== Descrições das consultorias de RH (mesma ordem dos itens "rh" em EMP, depois dos 8 primeiros) ===== */
-var EMPD_RH={
-pt:["Gestão de pessoas, trabalho temporário e recrutamento. O site tem vagas presenciais em Curitiba e região, principalmente para indústria e áreas técnicas.","Consultoria de recrutamento de Curitiba, com foco em executivos e profissionais especializados. Permite cadastrar o currículo no portal de vagas.","Recrutamento e alocação de profissionais de tecnologia (TI). Tem página de carreiras para cadastrar o currículo.","Consultoria de recrutamento focada em vendas e marketing, com portal de candidatos e vagas da área comercial.","Consultoria de Curitiba em recrutamento e desenvolvimento de carreira. Tem uma página de oportunidades.","Recrutamento especializado para cargos técnicos e de gerência, com escritório em Curitiba. Permite buscar vagas e enviar o currículo.","Consultoria de Curitiba em busca de executivos e desenvolvimento de lideranças. Tem uma página de oportunidades.","Consultoria de liderança e recrutamento de executivos. Tem um portal para cadastrar seu perfil."],
-es:["Gestión de personas, trabajo temporal y reclutamiento. El sitio tiene empleos presenciales en Curitiba y alrededores, sobre todo en industria y áreas técnicas.","Consultora de reclutamiento de Curitiba, enfocada en ejecutivos y profesionales especializados. Permite registrar el currículum en su portal de empleos.","Reclutamiento y asignación de profesionales de tecnología (TI). Tiene una página de carreras para registrar el currículum.","Consultora de reclutamiento enfocada en ventas y marketing, con portal de candidatos y empleos del área comercial.","Consultora de Curitiba en reclutamiento y desarrollo de carrera. Tiene una página de oportunidades.","Reclutamiento especializado para cargos técnicos y de gerencia, con oficina en Curitiba. Permite buscar empleos y enviar el currículum.","Consultora de Curitiba en búsqueda de ejecutivos y desarrollo de liderazgos. Tiene una página de oportunidades.","Consultora de liderazgo y reclutamiento de ejecutivos. Tiene un portal para registrar tu perfil."],
-fr:["Gestion du personnel, travail temporaire et recrutement. Le site propose des postes sur place à Curitiba et dans la région, surtout dans l’industrie et les métiers techniques.","Cabinet de recrutement de Curitiba, centré sur les cadres et les profils spécialisés. Permet de déposer son CV sur son portail d’offres.","Recrutement et placement de professionnels de l’informatique (TI). Une page carrières permet de déposer son CV.","Cabinet de recrutement spécialisé en ventes et marketing, avec un portail candidats et des offres commerciales.","Cabinet de Curitiba en recrutement et développement de carrière. Une page présente les opportunités.","Recrutement spécialisé pour les postes techniques et de direction, avec un bureau à Curitiba. Permet de chercher des offres et d’envoyer son CV.","Cabinet de Curitiba en recherche de cadres dirigeants et développement du leadership. Une page présente les opportunités.","Cabinet de conseil en leadership et recrutement de cadres. Un portail permet de déposer son profil."],
-en:["People management, temporary work and recruitment. The site lists on-site jobs in Curitiba and the region, mostly in industry and technical roles.","Curitiba recruitment firm focused on executives and specialized professionals. You can submit your résumé through its jobs portal.","Recruitment and placement of IT professionals. It has a careers page where you can submit your résumé.","Recruitment firm focused on sales and marketing, with a candidate portal and sales-related jobs.","Curitiba firm for recruitment and career development. It has an opportunities page.","Specialized recruitment for technical and management roles, with an office in Curitiba. You can search jobs and send your résumé.","Curitiba firm for executive search and leadership development. It has an opportunities page.","Leadership consulting and executive search firm. It has a portal where you can register your profile."]
-};
-/* junta as descrições novas às antigas (índice = posição em EMP) */
-(function(){for(var l in EMPD_RH){EMPD[l]=EMPD[l].concat(EMPD_RH[l]);}})();
 
 /* Textos novos da aba Empregos */
 var XEM={

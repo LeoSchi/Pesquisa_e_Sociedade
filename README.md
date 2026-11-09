@@ -6,10 +6,11 @@ Guia para estrangeiros que chegam a Curitiba: informações sobre a cidade, pont
 
 - Site em 4 idiomas (PT, EN, ES, FR) com troca instantânea
 - Modo claro e escuro, com a escolha salva no navegador
-- Abas: Início, A cidade, Pontos turísticos, Documentação, Empregos e outras
-- Checklist de documentos com progresso, impressão e geração de PDF
+- Aba Documentação com passo a passo, custo e prazo, glossário e checklist com progresso
+- Impressão da lista de documentos e geração de PDF
 - Telefones de emergência clicáveis e link de mapa em cada ponto turístico
 - Assistente de perguntas e respostas (chat)
+- Acessibilidade: link "Pular para o conteúdo" e navegação por teclado
 
 ## Estrutura
 
